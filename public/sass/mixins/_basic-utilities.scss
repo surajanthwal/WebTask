@@ -1,0 +1,32 @@
+// No margin
+@mixin no-margin() {
+  margin: 0px;
+}
+
+// Left margin
+@mixin left-margin($margin) {
+  margin-left: $margin;
+}
+
+//floating the element to left
+@mixin left() {
+  float: left;
+}
+
+//floating the element to right
+@mixin right() {
+  float: right;
+}
+
+//giving a fixed height to the element
+@mixin height($height) {
+  height: $height;
+}
+
+//changing the css on hover effect
+@mixin hover($color) {
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: $color;
+}
+

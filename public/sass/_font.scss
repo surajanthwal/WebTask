@@ -1,0 +1,30 @@
+//Basic font family
+.font {
+  font-family: $font-family-default;
+}
+
+//General Font color
+.fontColor {
+  color: $font-color-normal;
+}
+
+//Default font styling for content
+.fontBasic {
+  color: $font-color-normal;
+  line-height: $line-height-normal;
+}
+
+//For setting the date in main page
+.dateClass {
+  @include font-basic(#FC85AE, 600, xx-large);
+}
+
+//For setting the journey title
+.journeyClass {
+  @include font-basic(white, 900, 100px);
+}
+
+//For setting the tagline
+.taglineClass {
+  @include font-basic(white, normal, larger);
+}

@@ -1,0 +1,6 @@
+//mixin for setting basic properties of fonts
+@mixin font-basic($color,$fontWeight,$fontSize) {
+  color: $color;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+}

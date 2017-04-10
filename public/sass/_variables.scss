@@ -1,0 +1,94 @@
+//setting the fonts properties
+
+$font-family-default: BrandonText-Regular, Helvetica, Arial, sans-serif !default;
+$font-family-base: $font-family-default !default;
+
+//font sizes
+$font-size-base: 14px !default;
+$font-size-large: ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small: ceil(($font-size-base * 0.85)) !default; // ~12px
+
+
+//FontColor
+$font-color-normal: #A8A8A8 !default;
+
+//padding and border radius sizes
+$padding-base-vertical: 6px !default;
+$padding-base-horizontal: 12px !default;
+
+$padding-large-vertical: 10px !default;
+$padding-large-horizontal: 16px !default;
+
+$padding-small-vertical: 5px !default;
+$padding-small-horizontal: 10px !default;
+
+$padding-xs-vertical: 1px !default;
+$padding-xs-horizontal: 5px !default;
+
+$padding-left-large: 30px !default;
+$padding-left-lil-large: 50px !default;
+
+$padding-right-large: 30px !default;
+$padding-right-very-large: 60px !default;
+
+$padding-top-normal: 35px !default;
+$padding-top-large: 50px !default;
+$padding-large:     54px !default;
+
+$padding-small-percent: 15% !default;
+
+$line-height-large: 1.3333333 !default;
+$line-height-small: 1.5 !default;
+
+$border-radius-base: 4px !default;
+$border-radius-large: 6px !default;
+$border-radius-middle: 5px !default;
+
+$border-radius-small: 3px !default;
+
+//margin sizes
+$margin-top-high: 50px !default;
+$margin-bottom-medium: 30px !default;
+$margin-small: 20px !default;
+$margin-top-negative: -60px !default;
+$margin-verylarge-negative: -106px !default;
+
+//height sizes
+$height-normal: 800px !default;
+$height-small:  615px !default;
+
+$line-height-normal: 30px !default;
+
+//Colors
+$color-violet: #004276 !default;
+$color-violet-variant: #303952 !default;
+$color-black: #040404 !default;
+$color-blue: #004276 !default;
+
+//buttons : text and colors
+$btn-default-color: #333 !default;
+$btn-default-bg: #fff !default;
+$btn-default-border: #ccc !default;
+$btn-font-weight: normal !default;
+
+//Media queries breakpoints
+
+//Extra small screens
+$screen-xs: 480px !default;
+$screen-xs-max: 767px !default;
+
+//Small screens and tablets
+$screen-sm: 768px !default;
+$screen-sm-max: 1024px !default;
+
+//Medium screens and desktop
+$screen-md: 992px !default;
+//Large Screen and Wide desktop
+$screen-lg: 1024px !default;
+
+$screen-width: 1187px !default;
+
+
+
+
+

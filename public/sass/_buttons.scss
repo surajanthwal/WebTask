@@ -1,0 +1,25 @@
+// Base styles
+
+.btn {
+  color: white;
+  background-color: #FC85AE;
+  border: 2px solid #FC85AE;
+  border-radius: 50px;
+  &:hover,
+  &:focus,
+  &.focus {
+    background-color: darken(#FC85AE, 10%);
+    cursor: pointer;
+
+  }
+}
+
+.registernowButton {
+  @extend .btn;
+  margin: $margin-small;
+  font-weight: bold;
+  padding: $padding-large-horizontal;
+  padding-left: $padding-left-large;
+  padding-right: $padding-right-large;
+}
+

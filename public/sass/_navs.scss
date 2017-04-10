@@ -1,0 +1,19 @@
+// Fixed Navigation bar
+.navbar {
+  @include main-nav-bar(#303952, 40px, 50px);
+}
+
+//Main Horizontal Navigation List css
+.navList{
+  @include main-nav-list(10px, 30px, x-large);
+}
+
+//Nav bar list item core css
+.navbarListItem {
+  @include main-nav-bar-list-item(black);
+}
+
+.navbarListItem:hover {
+  @include hover(#524889);
+}
+

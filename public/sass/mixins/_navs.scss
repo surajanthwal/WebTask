@@ -1,0 +1,32 @@
+//mixin for main navigation bar which is fixed
+@mixin main-nav-bar($color,$paddingTop,$height) {
+  z-index: 10;
+  padding-top: $paddingTop;
+  overflow: hidden;
+  background-color: $color;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: $height;
+  transition: all .3s ease-in-out;
+}
+
+//mixin for main navigation list
+@mixin main-nav-list($paddingLeft, $paddingRight, $fontSize) {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-left: $paddingLeft;
+  padding-right: $paddingRight;
+  font-size: $fontSize;
+}
+
+//mixin for main nav bar items in the list
+@mixin main-nav-bar-list-item($color) {
+  display: block;
+  color:$color;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}

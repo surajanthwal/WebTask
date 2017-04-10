@@ -1,0 +1,14 @@
+
+// Keep images within the width of their parents.
+@mixin img-responsive($display: block) {
+  display: $display;
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin background-image($imageUrl, $height){
+  //background-image: url("public/images/img25resized.png");
+  background-image: url($imageUrl);
+  width: 100%;
+  height: $height;
+}

@@ -1,0 +1,349 @@
+//basic font family
+.font {
+  font-family: $font-family-default;
+}
+
+//giving 0 margin to the element
+.noMargin {
+  @include no-margin();
+}
+
+//Giving margin top 50px
+.mt50 {
+  margin-top: $margin-top-high;
+}
+
+//Negative margin top
+.mt60 {
+  margin-top: $margin-top-negative;
+}
+
+//Large negative margin
+.mt106 {
+  margin-top: $margin-verylarge-negative;
+}
+
+//Basic height styling
+.ht615 {
+  width: 100%;
+  height: $height-small;
+}
+
+//Padding left 30px
+.pl30 {
+  padding-left: $padding-left-large;
+}
+
+//Padding left 50px
+.pl50 {
+  padding-left: $padding-left-lil-large;
+}
+
+//Padding top 50px
+
+.pt50 {
+  padding-top: $padding-top-large;
+}
+
+//Padding top 35px
+.pt35 {
+  padding-top: $padding-top-normal;
+}
+
+//Padding right 60px
+.pr60 {
+  padding-right: $padding-right-very-large;
+}
+
+//Padding 54px
+.pd40 {
+  padding: $padding-large;
+}
+
+
+//floating the element to the left
+.left {
+  @include left();
+}
+
+//floating the element to the right
+.right {
+  @include right();
+}
+
+//text align center
+.center {
+  text-align: center;
+}
+
+//the logo class in the nav bar
+.logo {
+  @include left();
+  @include height(48px);
+  @include left-margin(30px);
+}
+
+.logo:hover {
+  @include hover(#524889);
+}
+
+//Fixed nav bar class on scroll event css
+.navbarMargin {
+  background-color: white;
+  padding-top: $padding-large-vertical;
+  margin-bottom: $margin-bottom-medium;
+}
+
+//Main page image alignment css
+
+//.mainPage {
+//  @include background-image("../images/img25resized.png", $height-normal);
+//}
+
+//Css for the main title in main page
+.mainTitle {
+  @include center();
+  padding-top: $padding-small-percent;
+}
+
+.sideBlock {
+  display: inline-block;
+  width: 50%;
+  margin-top: 50px;
+}
+
+
+.bigHeading {
+  width: 42%;
+  margin-left: 195px;
+  font-weight: 900;
+  font-size: 30px;
+  margin-top: 60px;
+}
+
+.paragraph {
+  width: 42%;
+  margin-left: 195px;
+  line-height: 25px;
+  margin-top: 52px;
+  text-align: justify;
+  color: #A8A8A8;
+}
+
+
+//flex alignment for different screens
+.flexContainer {
+  display: -webkit-flex;
+  display: flex;
+  @media (max-width: $screen-lg) {
+      width: $screen-width;
+  }
+}
+
+.extraPadding {
+  width: 75%;
+  padding: 70px;
+}
+
+.headingSmall {
+  color: #FC85AE;
+  font-size: x-large;
+  font-weight: 900;
+}
+
+.greyAndJustify {
+  text-align: justify;
+  color: #A8A8A8;
+  line-height: 20px;
+}
+
+.decimalList {
+  list-style-type: decimal-leading-zero;
+  color: #FC85AE;
+}
+
+
+
+li:before {
+  list-style-type: decimal-leading-zero;
+  padding-right: 20px;
+  color: #FC85AE;
+}
+.playButton {
+  text-align: center;
+  padding-top: 92px;
+}
+
+img.ht110 {
+  height: 110px;
+  vertical-align: middle;
+}
+
+
+
+.sideblockContent {
+  width: 67%;
+  padding: 90px;
+}
+
+.greyBox {
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #FAFAFA;
+  box-shadow: 10px 10px 20px 20px #FAFAFA;
+}
+
+.extendedImage {
+  width: 100%;
+  height: 509px;
+  margin-top: 25px;
+}
+
+.oneThird {
+  display: inline-block;
+  width: 33%;
+}
+
+.fullImageWidth {
+  width: 100%;
+}
+
+.mg77 {
+  margin: 77px;
+  text-align: justify;
+}
+.imageht438 {
+  width: 100%;
+  height: 438px;
+}
+
+.fullCrewButton {
+  margin-left: 43%;
+  position: absolute;
+  margin-top: -171px;
+}
+
+.schedule {
+  text-align: center;
+  padding: 16px;
+  width: 30%;
+}
+
+.timings {
+  text-align: center;
+  padding: 16px;
+  width: 70%;
+}
+
+.heading {
+  color: #303952;
+  margin: 40px;
+  font-weight: 900;
+  font-size: 30px;
+  margin-top: 60px;
+}
+
+.content {
+  margin: 17px;
+  font-weight: 900;
+  color: #383F59;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.p50 {
+  padding: 50px;
+  padding-top: 96px;
+}
+
+.greyBox1 {
+  margin: 20px;
+  background-color: #FAFAFA;
+}
+
+.headingLarge {
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.noListDecoration {
+  list-style-type: none;
+}
+
+.FAQImage {
+  width: 100%;
+  margin-left: 20px;
+  height: 1055px;
+}
+
+.sponsorSize {
+  max-width: 150px;
+  max-height: 30px;
+  width: auto;
+  height: auto;
+}
+
+.headingGigantic {
+  font-size: 59px;
+  width: 300px;
+  text-align: center;
+  font-weight: 900;
+  color: #004276;
+}
+
+.sponsorFooter {
+  margin-top: -21px;
+  text-align: center;
+}
+
+.fontBasicViolet {
+  line-height: 30px;
+  color: #004276;
+}
+
+.logoCenter {
+  margin-left: 515px;
+  margin-top: 114px;
+  height: 250px;
+  width: 250px;
+}
+
+.newsletterButton {
+  width: 489px;
+  display: block;
+  margin: auto;
+  margin-top: 83px;
+  font-weight: bold;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 29px;
+  /* padding-right: 30px; */
+  background: none;
+  border-radius: 48px;
+  color: #8a96a0;
+  text-align: left;
+}
+
+.newsletterButton:hover {
+  cursor: pointer;
+  background-color: #8a96a0;
+  background-color: #004276;;
+}
+
+.fontFooter {
+  color: #A8A8A8;
+  text-align: center;
+  font-size: 13px;
+  padding-top: 120px;
+  padding-bottom: 43px;
+}
+
+.ml119 {
+  margin-left: 119px;
+}
+
+
