@@ -3,9 +3,24 @@
   @include main-nav-bar(#303952, 40px, 50px);
 }
 
+//Less height for smaller screens
+@media (max-width: 1024px) {
+  .navbar {
+    height: 109px;
+  }
+}
+
 //Main Horizontal Navigation List css
 .navList{
   @include main-nav-list(10px, 30px, x-large);
+}
+
+//styling navlist for smaller screens
+@media (max-width: 1024px) {
+  .navList {
+    margin-top: 31px;
+    font-size: 41px;
+  }
 }
 
 //Nav bar list item core css

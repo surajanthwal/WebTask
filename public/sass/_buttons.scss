@@ -1,5 +1,6 @@
 // Base styles
 
+//default button styling
 .btn {
   color: white;
   background-color: #FC85AE;
@@ -14,6 +15,7 @@
   }
 }
 
+//register now button styling
 .registernowButton {
   @extend .btn;
   margin: $margin-small;
@@ -21,5 +23,32 @@
   padding: $padding-large-horizontal;
   padding-left: $padding-left-large;
   padding-right: $padding-right-large;
+}
+
+//Styling for smaller screens
+@media (max-width: 1024px) {
+  .registernowButton {
+    width: 481px;
+    font-size: 50px;
+  }
+}
+//"Become a sponsor" button styling
+.widthMobile {
+  color: white;
+  background-color: #FC85AE;
+  border: 2px solid #FC85AE;
+  border-radius: 50px;
+}
+
+.widthMobile:hover {
+  background-color: #fb538d;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .widthMobile {
+    width: 745px;
+    font-size: 60px;
+  }
 }
 

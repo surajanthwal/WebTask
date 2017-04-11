@@ -14,9 +14,25 @@
   line-height: $line-height-normal;
 }
 
+//Basic fonts for small screens
+@media (max-width: 1024px) {
+  .fontBasic {
+    font-size: 70px;
+    line-height: 88px;
+    text-align: justify;
+  }
+}
+
 //For setting the date in main page
 .dateClass {
   @include font-basic(#FC85AE, 600, xx-large);
+}
+
+//Date class for smaller screens
+@media (max-width: 1024px) {
+  .dateClass {
+    font-size: 70px;
+  }
 }
 
 //For setting the journey title
@@ -24,7 +40,114 @@
   @include font-basic(white, 900, 100px);
 }
 
+//Journey class for smaller screens
+@media (max-width: 1024px) {
+  .journeyClass {
+    font-size: 180px;
+  }
+}
+
 //For setting the tagline
 .taglineClass {
   @include font-basic(white, normal, larger);
 }
+
+//tagline class for smaller screens
+@media (max-width: 1024px) {
+  .taglineClass {
+    font-size: 50px;
+  }
+}
+
+//heading for mobile screens
+@media (max-width: 1024px) {
+  .mobileSizeHeading {
+    font-size: 70px;
+  }
+}
+
+//large heading for mobile screens
+@media (max-width: 1024px) {
+  .mobileSizeHeadingLarge {
+    font-size: 122px;
+  }
+}
+
+// styling for big heading to be used throughout the app
+.bigHeading {
+  width: 42%;
+  margin-left: 195px;
+  font-weight: 900;
+  font-size: 30px;
+  margin-top: 60px;
+}
+
+//big heading for tablets and above screen sizes
+@media (max-width: 1024px) {
+  .bigHeading {
+    font-size: 70px;
+    width: 60%;
+    margin-left: 240px;
+    text-align: center;
+  }
+}
+
+//big heading for mobile screens
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bigHeading {
+    margin-left: 256px;
+    width: 67%;
+  }
+}
+
+.headingSmall {
+  color: #FC85AE;
+  font-size: x-large;
+  font-weight: 900;
+  @media (max-width: 767px) {
+    font-size: 70px;
+    padding-top: 70px;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 100px;
+  }
+}
+
+//basic paragraph styling
+.paragraph {
+  width: 42%;
+  margin-left: 195px;
+  line-height: 25px;
+  margin-top: 52px;
+  text-align: justify;
+  color: #A8A8A8;
+}
+
+//paragraph for smaller devices
+@media (max-width: 1024px) {
+  .paragraph {
+    font-size: 50px;
+    margin-left: 10px;
+    width: 97%;
+    line-height: 90px;
+  }
+}
+
+.greyAndJustify {
+  text-align: justify;
+  color: #A8A8A8;
+  line-height: 20px;
+  @media (max-width: 767px) {
+    font-size: 70px;
+    line-height: 88px;
+    padding-right: 75px;
+    margin-top: -31px;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 70px;
+    line-height: 65px;
+    padding-right: 75px;
+    margin-top: -31px;
+  }
+}
+

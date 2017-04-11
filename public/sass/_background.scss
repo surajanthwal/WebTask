@@ -24,3 +24,132 @@
   background-color: $color-violet-variant;
 }
 
+//background image for main page
+.mainPage {
+  background-image: url('http://localhost:8080/public/images/img25resized.png');
+  width: 100%;
+  height: 800px;
+  @media (max-width: 1024px) {
+    background-image: url('http://localhost:8080/public/images/img25resized.png');
+    width: 1280px;
+    max-height: 800px;
+  }
+}
+
+//background for the video button
+.videoBackground {
+  background-image: url("http://localhost:8080/public/images/img32.png");
+  height: 300px;
+  background-repeat: no-repeat;
+  @media (max-width: 1024px) {
+    background-image: url("http://localhost:8080/public/images/img32.png");
+    width: 1187px;
+    max-height: 800px;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    padding-left: 46px;
+  }
+}
+
+//background for rad image 1
+.radImage1 {
+  background-image: url("http://localhost:8080/public/images/img36resized.png");
+  height: 500px;
+  margin-left: -50px;
+  @media (max-width: 767px) {
+    width: 74%;
+    max-height: 514px;
+    margin: auto;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 74%;
+    height: 850px;
+    max-height: 1000px;
+    margin: auto;
+  }
+}
+
+.radImage2 {
+  background-image: url("http://localhost:8080/public/images/img29.png");
+  width: 50%;
+  height: 517px;
+  margin-top: 33px;
+  margin-left: 27px;
+}
+
+@media (max-width: 767px) {
+  .radImage2 {
+    width: 74%;
+    max-height: 514px;
+    margin-left: 70px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .radImage2 {
+    width: 74%;
+    height: 850px;
+    max-height: 1000px;
+    margin-left: 72px;
+  }
+}
+
+.radImage3 {
+  background-image: url("http://localhost:8080/public/images/img30.png");
+  height: 517px;
+  margin-left: -23px;
+  margin-right: 56px;
+
+}
+
+@media (max-width: 767px) {
+  .radImage3 {
+    width: 74%;
+    height: 850px;
+    max-height: 1000px;
+    margin-left: 72px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .radImage3 {
+    width: 74%;
+    height: 850px;
+    max-height: 1000px;
+    margin-left: 77px;
+  }
+}
+
+.radImage4 {
+  background-image: url("http://localhost:8080/public/images/img36resized.png");
+  height: 502px;
+  margin-left: -70px;
+  margin-top: 64px;
+}
+
+@media (max-width: 767px) {
+  .radImage4 {
+    width: 74%;
+    max-height: 514px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .radImage4 {
+    width: 74%;
+    height: 850px;
+    max-height: 1000px;
+    margin: auto;
+  }
+}
+
+.chopperBackground {
+  background-image: url("http://localhost:8080/public/images/img31.png");
+  width: 100%;
+  height: 438px;
+}
+
+
+
+

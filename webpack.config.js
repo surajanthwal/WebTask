@@ -1,19 +1,19 @@
+//the plugin is used for handling generated css independently
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+//weback configuration
 module.exports = {
+    //entry point of the process which is main.js file
     entry: './main',
+    //output file for the process
     output: {
         path: __dirname,
         filename: 'bundle.js'
     },
     watch: true,
     module: {
-        loaders: [{
-            test: /\.(gif|png|jpe?g|svg)$/i,
-            loaders: [
-                'file?hash=sha512&digest=hex&name=[hash].[ext]',
-                'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
-            ]
-        },
+        loaders: [
+            //Configuration for the js file
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
@@ -22,38 +22,16 @@ module.exports = {
                     presets: ['es2015']
                 }
             },
+            //Configuration for the .scss file using extract text plugin to handle it separately
             {
                 test: /\.scss$/,
                 exclude: /node_modules/,
                 loader: ExtractTextPlugin.extract('css-loader!sass-loader')
             }
-            // , {
-            //     test: /\.css$/,
-            //     exclude: /node_modules/,
-            //     loader: 'style-loader!css-loader'
-            // }
         ]
     },
-    
-    // module: {
-    //     rules: [
-    //         {
-    //             test: /\.scss$/,
-    //             use: [{
-    //                 loader: "style-loader" // creates style nodes from JS strings
-    //             }, {
-    //                 loader: "css-loader" // translates CSS into CommonJS
-    //             }, {
-    //                 loader: "sass-loader" // compiles Sass to CSS
-    //             }]
-    //         },
-    //         {
-    //             test: /\.(js|jsx)$/,
-    //             use: 'babel-loader'
-    //         }
-    //     ]
-    // },
+    //generating the converted css from scss in a separate file and storing inside public/generatedCss folder
     plugins: [
-        new ExtractTextPlugin("styles.css")
+        new ExtractTextPlugin("./public/generatedCss/styles.css")
     ]
 };
